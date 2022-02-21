@@ -1,5 +1,5 @@
 from car import Car
-import Battery
+from battery.battery import Battery
 from datetime import date
 import dateutil.relativedelta
 
