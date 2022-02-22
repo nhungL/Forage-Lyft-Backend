@@ -8,7 +8,7 @@ from datetime import date
 
 class CarFactory():
     @staticmethod
-    def  create_calliope(self, current_date: date, last_service_date: date, current_mileage: int, last_service_mileage: int) -> Car:
+    def  create_calliope(current_date: date, last_service_date: date, current_mileage: int, last_service_mileage: int) -> Car:
         battery = spindler.SpindlerBattery(current_date, last_service_date)
         engine = capulet.CapuletEngine(current_mileage, last_service_mileage)
         car = Car(engine, battery)
